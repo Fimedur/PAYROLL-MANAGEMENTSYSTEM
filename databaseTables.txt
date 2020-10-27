@@ -1,0 +1,52 @@
+create table e_info(
+eid varchar(50),
+name varchar(50),
+ms varchar(50),
+fmane varchar(50),
+sex varchar(50),
+age varchar(50),
+dob varchar(150),
+e_add varchar(250),
+bg varchar(50),
+smame varchar(50),
+nfc varchar(50),
+jtitle varchar(50),
+dept varchar(50),
+deg varchar(50),
+eshift varchar(50),
+bsalary varchar(50),
+jdate varchar(50),
+pic image,
+primary key(eid)
+);
+
+create table leave(
+eid varchar(50),
+s_leave numeric (18,2),
+c_leave numeric(18,2),
+p_leave numeric(18,2),
+u_leave numeric(18,2),
+total_leave numeric(18,2)
+);
+
+
+create table salary(
+eid varchar(50),
+name varchar(50),
+acNo varchar(50),
+jdate varchar(50),
+c_month varchar(50),
+bsalary numeric(18,2),
+nsalary numeric(20,2)
+);
+
+create table admin(
+aid varchar(50),
+a_name varchar(50),
+primary key(aid)
+);
+
+
+insert into admin values('12345','admin1');
+insert into admin values('123456','admin2');
+insert into admin values('1234567','admin3');

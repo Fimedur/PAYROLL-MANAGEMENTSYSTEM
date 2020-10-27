@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{689233D5-1D7E-4471-BFBD-38DC81F904BF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PAYROLL_MANAGEMENTSYSTEM</RootNamespace>
+    <AssemblyName>PAYROLL_MANAGEMENTSYSTEM</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrator_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator_Form.Designer.cs">
+      <DependentUpon>Administrator_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePasswordForm.Designer.cs">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EDetails.Designer.cs">
+      <DependentUpon>EDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeForm.Designer.cs">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_Details.Designer.cs">
+      <DependentUpon>Employee_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Leave.Designer.cs">
+      <DependentUpon>Leave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LISTVIEW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LISTVIEW.Designer.cs">
+      <DependentUpon>LISTVIEW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MailingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MailingForm.Designer.cs">
+      <DependentUpon>MailingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Salary info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salary info.Designer.cs">
+      <DependentUpon>Salary info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salary.Designer.cs">
+      <DependentUpon>Salary.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Administrator_Form.resx">
+      <DependentUpon>Administrator_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePasswordForm.resx">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDetails.resx">
+      <DependentUpon>EDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeForm.resx">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_Details.resx">
+      <DependentUpon>Employee_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leave.resx">
+      <DependentUpon>Leave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LISTVIEW.resx">
+      <DependentUpon>LISTVIEW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MailingForm.resx">
+      <DependentUpon>MailingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Salary info.resx">
+      <DependentUpon>Salary info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salary.resx">
+      <DependentUpon>Salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3-Parallaxis_opt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-30.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-35.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-36.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-38.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38481592-creative-old-wood-planks-perfect-background-for-your-concept-or-project-landscape-style-great-backgr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cutcaster-photo-801076657-hi-res-grunge-textures-and-backgrounds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hd-nature-wallpapers-desktop-images-sky-perfect-colors-1280x800-736x459.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wallpaper-Background-Perfect-C7Y.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
